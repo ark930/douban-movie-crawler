@@ -15,7 +15,7 @@ class MovieReviewSpider(scrapy.Spider):
         # 每页查询数量
         count = 10
 
-        for i in range(50):
+        for i in range(1600):
             start = i * count
             url = 'https://api.douban.com/v2/movie/subject/26266893/reviews?apikey={0}&start={1}&count={2}'.format(
                 apikey, start, count)
