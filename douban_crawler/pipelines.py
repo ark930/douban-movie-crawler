@@ -138,7 +138,6 @@ class WordSegmentPipeline(object):
         rating = int(item['rating'])
 
         seg_list = pseg.cut(content, HMM=False)
-        # print("Full Mode: " + "/ ".join(seg_list))
 
         for word, flag in seg_list:
             if flag not in ['b', 'c', 'd', 'df', 'f', 'm', 'p', 'r', 'u'] \
